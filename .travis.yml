@@ -2,6 +2,6 @@
 lang: ruby
 script:
   - bundle install
-  - ruby generate_opml.rb
+  - bundle exec ruby generate_opml.rb
 after_success:
   - .travis/push.sh
