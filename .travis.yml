@@ -1,0 +1,7 @@
+# Ruby is our language as asciidoctor is a ruby gem.
+lang: ruby
+script:
+  - bundle install
+  - ruby generate_opml.rb
+after_success:
+  - .travis/push.sh
