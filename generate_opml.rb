@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
-require 'builder'
-require 'feedbag'
-require 'json'
-require 'net/http'
-require 'nokogiri'
-require 'uri'
+# require 'builder'
+# require 'feedbag'
+# require 'json'
+# require 'net/http'
+# require 'nokogiri'
+# require 'uri'
 
 OUTPUT_FILENAME = 'engineering_blogs.opml'
 TITLE = 'Engineering Blogs'
