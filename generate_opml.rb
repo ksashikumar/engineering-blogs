@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# require 'builder'
+require 'builder'
 # require 'feedbag'
 # require 'json'
 # require 'net/http'
