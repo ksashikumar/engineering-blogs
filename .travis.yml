@@ -5,7 +5,7 @@ script:
 after_success:
   - git config credential.helper "store --file=.git/credentials"
   - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - ".travis/push.sh"
+  - .travis/push.sh
 env:
   global:
     secure: JpT8PIJD3vsN0Fu162MEPwwrU9STZXfX4IwQcQMw3Soc5ZwSjpNPDVRBtPE4DRH0F1vRtNRveGCExPk+dRtoYYNchd66VG+szWc2IJCJET0lcsHmj+3AuvXGCU2aotmJVectqkOQusb4wqBA3r9TKUjKLtBzZwFEyAOvK6xXPjKrvvpmSpUOQzroZaQ+RKzgIkxnfOo6EGjHcgJHiOKT5yJ5RtZyN68el0YkdSeB72e5LnPaZNVsjAYz7z4h9cYmkwGJLB4LjBu20+kcZgcLjedDdiwNn9oO66VQdqbEnynnAsIkPEtA6Z3o4bf77zhN7ruJZDCrGUPP599pfTuVv82LqTfX2EbBYZTF9xTtguzHqyiH1jrmLtpfRE61LV1T503IvirHfxPLSZdDWxq0BPj0L5rL7ioMVri8JSxBCiNS6igV/TT7POFsWPWWdnI38GV9qm9v3648qYp64rhdfnJADMeNwgf2+sseTF1AgvdQNh5X+4+zU0heBnZxVyTmo+qs4MeZEAhUkgpTh62vwVnXnQuNXqW8sKcnsoahskfw2enLjb2uY4q93AQd7aFZw6xBPc342qblipCgZgRMf5MHSi4kNPXgMNI1VxXokGBMU1fMXjxLX6LmgqtXbZ6vls/GTDlMrPOro+R4OkPVq7lWLVbQ24KugQM6pkJSnLY=
