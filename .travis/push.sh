@@ -7,7 +7,7 @@ setup_git() {
 
 commit_opml() {
   git checkout -b ${TRAVIS_PULL_REQUEST_BRANCH}
-  git add . *.opml
+  git add *.opml
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
